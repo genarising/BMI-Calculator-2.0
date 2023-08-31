@@ -1,0 +1,16 @@
+print("Welcome to the BMI calculator 2.0.\n")
+weight = float(input("What is your weight in kg?\n"))
+height = float(input("What is your height in m?\n"))
+
+bmi = round(weight / height ** 2,2)
+
+if bmi < 18.5:
+  print(f"Your BMI is {bmi}, which is categorized as underweight.")
+elif bmi < 25:
+  print(f"Your BMI is {bmi}, which is categorized as a healthy weight.")
+elif bmi < 30:
+  print(f"Your BMI is {bmi}, which is categorized as overweight.")
+elif bmi < 35:
+  print(f"Your BMI is {bmi}, which is categorized as obese.")
+else:
+  print(f"Your BMI is {bmi}, which is categorized as clinically obese.")
